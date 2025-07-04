@@ -7,8 +7,9 @@
     <title>Cadastrar Aluno</title>
 </head>
 <body>
-    <form action="aluno.index" method="POST">
+    <form method="POST" action="/aluno/store">
         @csrf
+        
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br>
 
@@ -57,6 +58,8 @@
             <option value="gym_pass">Gym pass</option>
             <option value="total_pass">Veterano</option>
         </select><br>
+
+        <input type="submit" value="Cadastrar Aluno">
 
     </form>
 </body>
